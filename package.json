@@ -24,6 +24,5 @@
     "url": "https://github.com/oslabs-beta/aqilles/issues"
   },
   "homepage": "https://github.com/oslabs-beta/aqilles#readme",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
