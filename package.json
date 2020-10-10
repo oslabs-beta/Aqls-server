@@ -4,7 +4,7 @@
   "description": "A full-stack GraphQL subscription analytics module",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
     "url": "https://github.com/oslabs-beta/aqilles/issues"
   },
   "homepage": "https://github.com/oslabs-beta/aqilles#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.5.2"
+  }
 }
