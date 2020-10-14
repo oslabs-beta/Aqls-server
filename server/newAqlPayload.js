@@ -1,15 +1,21 @@
-/* Creates a copy of the received AQL, adds a mutationReceived property of the current time,
-   and returns copy to subscription payload to travel to subscribers.
-*/
+const newTraqlEntry = require('./newTraqlEntry');
 
-function newAqlPayload(args) {
-  const aql = {
-    ...args.aql,
-    mutationReceived: new Date(),
-  };
-  return aql;
+/* Creates a copy of the received payload, adds AQL with mutationReceived property of the 
+current time, creates newTraqlEntry for this mutation, and finally returns updated payload. */
+
+function newAqlPayload(payload, args, traql, pubsub) {
+  const newPayload = {...payload};
+  // Update payload to include Aql with mutationReceived property
+  for(let key in newPayload) {
+    newPayload[key].aql = {
+      ...args.aql,
+      mutationReceived: Date.now(),
+    };
+  }
+  // Create new entry in Traql for this mutation
+  newTraqlEntry(traql, args, pubsub);
+  // Return updated payload
+  return newPayload;
 }
+
 module.exports = newAqlPayload;
-/* TODO Update function to take payload object and args and return payload obj including
- the updated Aql with current time stamped on it.
-*/
