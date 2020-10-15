@@ -3,9 +3,11 @@ Traql will keep track of the number of subscription resolvers in the system,
 which will be used to calculate the number of current subscribers 
 (subscriptions divided by number of subscription resolvers). */
 
-function Traql(resolvers) {
+function Traql(resolvers, userToken) {
   // Create subResolvers property that is equal to number of subscription resolvers in system.
   this.subResolvers = Object.keys(resolvers.Subscription).length;
-};
+  // Create userToken property
+  this.userToken = userToken;
+}
 
 module.exports = Traql;
