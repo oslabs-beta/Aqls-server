@@ -9,9 +9,13 @@ let open = true;
 function traqlAudit(traql) {
   if (open) {
     open = false;
-    if (Object.keys(traql).length > 1) {
+    if (Object.keys(traql).length > 2) {
       for (let key in traql) {
-        if (key !== 'subResolvers' && traql[key].expectedNumberOfAqls >= 1) {
+        if (
+          key !== 'subResolvers' &&
+          key !== 'userToken' &&
+          traql[key].expectedNumberOfAqls >= 1
+        ) {
           if (
             traql[key].expectedNumberOfAqls ===
             traql[key].aqlsReceivedBack.length
