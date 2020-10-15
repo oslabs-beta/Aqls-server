@@ -4,12 +4,13 @@ const newTraqlEntry = require('./newTraqlEntry');
 current time, creates newTraqlEntry for this mutation, and finally returns updated payload. */
 
 function newAqlPayload(payload, args, traql, pubsub) {
-  const newPayload = {...payload};
-  // Update payload to include Aql with mutationReceived property
-  for(let key in newPayload) {
+  const newPayload = { ...payload };
+  // Update payload to include Aql with mutationReceived and userToken property
+  for (let key in newPayload) {
     newPayload[key].aql = {
       ...args.aql,
       mutationReceived: Date.now(),
+      userToken: traql.userToken,
     };
   }
   // Create new entry in Traql for this mutation
