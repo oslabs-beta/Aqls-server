@@ -13,13 +13,4 @@ function newTraqlEntry(traql, args, pubsub) {
   };
 }
 
-
-let traql = { subResolvers: 2 };
-let args = { aql: { mutationId: 1, resolver: 'resolver', userToken: 2 } };
-let pubsub = { subscriptions: { key1: 1, key2: 2, key3: 3 } };
-
-delete args.aql.userToken;
-newTraqlEntry(traql, args, pubsub);
-console.log(traql[1].userToken);
-
 module.exports = newTraqlEntry;
