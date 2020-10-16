@@ -45,7 +45,6 @@ function traqlAudit(traql) {
       axios(postReq)
       .then(res => {
         console.log('successful addition of aqls to db');
-        aqlsToBeSent = [];
       })
       .catch(err => console.log('err'));    
     }
