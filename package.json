@@ -25,5 +25,10 @@
   },
   "homepage": "https://github.com/oslabs-beta/aqilles#readme",
   "dependencies": {
+    "@apollo/client": "^3.2.5",
+    "axios": "^0.20.0",
+    "express": "^4.17.1",
+    "timesync": "^1.0.8",
+    "uuid": "^8.3.1"
   }
 }
