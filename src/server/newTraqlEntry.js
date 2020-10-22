@@ -12,5 +12,4 @@ function newTraqlEntry(traql, args, pubsub) {
     userToken: traql.userToken,
   };
 }
-
 module.exports = newTraqlEntry;

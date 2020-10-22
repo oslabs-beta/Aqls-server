@@ -1,6 +1,6 @@
 const newTraqlEntry = require('./newTraqlEntry');
 
-/* Creates a copy of the received payload, adds AQL with mutationReceived property of the 
+/* Creates a copy of the received payload, adds AQL with mutationReceived property of the
 current time, creates newTraqlEntry for this mutation, and finally returns updated payload. */
 
 function newAqlPayload(payload, args, traql, pubsub) {
