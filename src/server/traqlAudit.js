@@ -17,7 +17,7 @@ function traqlAudit(traql) {
     if (Object.keys(traql).length > 2) {
       let postReq = {
         method: 'post',
-        url: 'http://localhost:3000/aqls',
+        url: 'https://www.aqls.io/aqls',
       };
       // loop through the untracked traql entries
       for (let key in traql) {
@@ -28,7 +28,7 @@ function traqlAudit(traql) {
           traql[key].expectedNumberOfAqls >= 1
         ) {
           traql[key].mutationId = key;
-          // if we receive back all of the expected Aqls, aka have resolved this traql entry
+          // if we receive all of the expected Aqls, aka have resolved this traql entry
           if (
             traql[key].expectedNumberOfAqls ===
             traql[key].aqlsReceivedBack.length
