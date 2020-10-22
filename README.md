@@ -4,7 +4,7 @@
 ## Overview
 GraphQL analytics toolkit and dashboard that integrate with Apollo Client and Apollo Server Express. It is an easy to use analytics suite that monitors GraphQL subscriptions concurrency, latency, errors, and resolver frequency. Our integrated dashboard displays your GraphQL analytics on dynamic and interactive charts. 
 
-This package is for setting up your server. For the client-side package please refer to the [Aqls-client]() package.
+This package is for setting up your server. For the client-side package please refer to the [Aqls-client](https://github.com/oslabs-beta/Aqls-client) package.
 
 **Note:** Aqls is currently in BETA and improvements will continue to be implemented. If any issues are encountered while using our application, please submit a PR. 
 
@@ -39,7 +39,7 @@ const resolvers = { Mutation, Query, Subscription };
 ```javascript
 const traql = new Traql(resolvers, 'INSERT USER TOKEN HERE IN QUOTES');
 ```
-This will keep track of the number of subscription resolvers in the system and will calculate the number of current subscribers. You can get your User Token from [Aqls.io]() by signing up through Github OAuth. This token is needed to view your analytics in the developer dashboard at Aqls.io. 
+This will keep track of the number of subscription resolvers in the system and will calculate the number of current subscribers. You can get your User Token from [Aqls.io](https://www.aqls.io/) by signing up through Github OAuth. This token is needed to view your analytics in the developer dashboard at Aqls.io. 
 ####
 - [ ] **4**. Add to your Apollo Server: 
 ```javascript
@@ -132,6 +132,6 @@ Case Simmons: [Case's Github](https://github.com/casesimmons) and [Case's Linked
 
 Julie Pinchak: [Julie's Github](https://github.com/jpinchak) and [Julie's LinkedIn](https://www.linkedin.com/in/julie-pinchak/)
 
-Michael O'Halloran: [Michael's Github](https://github.com/LordRegis22) and [Michael's LinkedIn]()
+Michael O'Halloran: [Michael's Github](https://github.com/LordRegis22) and [Michael's LinkedIn](https://www.linkedin.com/)
 
 Rocio Infante: [Rocio's Github](https://github.com/Rocio-Infante) and [Rocio's LinkedIn](https://www.linkedin.com/in/rocio-infante/)
