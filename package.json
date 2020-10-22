@@ -1,7 +1,7 @@
 {
   "name": "@aqls/server",
-  "version": "1.0.0",
-  "description": "A full-stack GraphQL subscription analytics module",
+  "version": "1.0.5",
+  "description": "An intelligent full-stack GraphQL subscription and analytics module. Server-side analytics processing, self-auditing router, and resolver plugins.",
   "main": "src/index.js",
   "scripts": {
     "test": "test",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oslabs-beta/aqls.git"
+    "url": "git+https://github.com/oslabs-beta/Aqls-server"
   },
   "keywords": [
     "GraphQL",
@@ -22,7 +22,7 @@
   "author": "AqlOrg",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/oslabs-beta/aqls/issues"
+    "url": "https://github.com/oslabs-beta/Aqls-server/issues"
   },
   "homepage": "https://aqls.io",
   "dependencies": {
